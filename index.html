@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Bot - Your AI Math Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-robot"></i>
+                    <h1>Math Bot</h1>
+                </div>
+                <p class="subtitle">Your AI Math Assistant</p>
+            </div>
+        </header>
+
+        <!-- Chat Interface -->
+        <div class="chat-container">
+            <div class="chat-header">
+                <h2><i class="fas fa-comments"></i> Chat with Math Bot</h2>
+                <button id="clearChat" class="clear-btn">
+                    <i class="fas fa-trash"></i> Clear
+                </button>
+            </div>
+            
+            <div class="chat-messages" id="chatMessages">
+                <!-- Welcome message -->
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <div class="message-header">
+                            <i class="fas fa-robot bot-icon"></i>
+                            <span class="message-time" id="currentTime"></span>
+                        </div>
+                        <div class="message-text">
+                            <h3>🤖 Welcome to Math Bot!</h3>
+                            <p>I can help you with:</p>
+                            <ul>
+                                <li>Basic math (+, -, *, /)</li>
+                                <li>Powers (2^3 = 8)</li>
+                                <li>Square root (sqrt 16)</li>
+                                <li>Trigonometry (sin, cos, tan)</li>
+                                <li>Logarithms (log 100, log2 8)</li>
+                                <li>Area calculations</li>
+                                <li>Simple interest</li>
+                                <li>LCM and HCF</li>
+                            </ul>
+                            <p>Try asking me something like:</p>
+                            <div class="examples">
+                                <span class="example">2 + 3 * 4</span>
+                                <span class="example">5^3</span>
+                                <span class="example">sqrt 16</span>
+                                <span class="example">sin(30)</span>
+                                <span class="example">area of circle 5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="input-area">
+                <div class="input-container">
+                    <input type="text" id="userInput" placeholder="Ask me anything math-related..." autocomplete="off">
+                    <button id="sendBtn" class="send-btn">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <div class="quick-actions">
+                    <button class="quick-btn" data-action="2 + 3 * 4">Basic Math</button>
+                    <button class="quick-btn" data-action="5^3">Power</button>
+                    <button class="quick-btn" data-action="sqrt 16">Square Root</button>
+                    <button class="quick-btn" data-action="sin(30)">Trigonometry</button>
+                    <button class="quick-btn" data-action="area of circle 5">Area</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="features">
+            <div class="feature-card">
+                <i class="fas fa-calculator"></i>
+                <h3>Basic Math</h3>
+                <p>Addition, subtraction, multiplication, division</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-superscript"></i>
+                <h3>Powers & Roots</h3>
+                <p>Calculate powers and square roots</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Trigonometry</h3>
+                <p>Sine, cosine, tangent and more</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-percentage"></i>
+                <h3>Interest</h3>
+                <p>Calculate simple interest</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-shapes"></i>
+                <h3>Geometry</h3>
+                <p>Area calculations for various shapes</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-sort-numeric-up"></i>
+                <h3>LCM & HCF</h3>
+                <p>Find least common multiple and highest common factor</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
